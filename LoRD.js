@@ -451,7 +451,7 @@ break
                 }
             }
             break
-     case 'join': {
+     case 'join  للانضمام للمجموعات': {
                 if (!isCreator) throw mess.owner
                 if (!text) throw 'Enter the group link!'
                 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) throw 'Link Invalid!'
@@ -460,7 +460,7 @@ break
                 await hisoka.groupAcceptInvite(result).then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
             }
             break      
-            case 'leave': {
+            case 'leave الخروج من مجموعة': {
                 if (!isCreator) throw mess.owner
                 await hisoka.groupLeave(m.chat).then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
             }
@@ -473,7 +473,7 @@ break
           m.reply(`Exif has been successfully changed to\n\n𖣘 Packname : ${global.packname}\n𖣘 Author : ${global.author}`)
             }
             break
-	case 'kick': {
+	case 'kick طرذ شخص من مجموعة': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -481,7 +481,7 @@ break
 		await hisoka.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 	}
 	break
-	case 'add': {
+	case 'add اضافة شخص للمجموعة': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
