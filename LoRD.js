@@ -31,10 +31,10 @@ const fvid = {
                 },
 	 message: { 
                  "videoMessage": { 
-                 "title": `LoRD-MD`,
-                 "h": `LoRD-MD`,
+                 "title": `BobiZ`,
+                 "h": `by Noureddine`,
                  'duration': '99999', 
-                 'caption': `LoRD-MD`,
+                 'caption': `bobiz bot`,
                  'jpegThumbnail': global.thumb
                         }
                        }
@@ -52,7 +52,7 @@ const lordofc = {
                             itemCount : 123,
                             itemCoun : 404,
                             surface : 404,
-                            message: `© LoRD-MD`,
+                            message: `BobiZ bot`,
                             orderTitle: 'B',
                             thumbnail: global.thumb, 
                             sellerJid: '0@s.whatsapp.net'
@@ -489,7 +489,7 @@ break
 		await hisoka.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 	}
 	break
-	case 'promote': {
+	case 'promote tla admin': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -866,7 +866,7 @@ break
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: '𝐼𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚',
+                                    displayText: 'انستغرام',
                                     url: 'https://instagram.com/__light__seeker__3?igshid=YmMyMTA2M2Y='
                                 }
                             }, {
@@ -1623,27 +1623,27 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								"title": "Group Features",
 								"rows": [
 									{
-										"title": "𝑮𝒓𝒐𝒖𝒑 𝑴𝒆𝒏𝒖",
+										"title": "اوامر خاصة بصاحب البوت",
 										"description": "",
 										"rowId": `groupmenu`
 									},
 									{
-										"title": "𝑪𝒐𝒏𝒗𝒆𝒓𝒕 𝑴𝒆𝒏𝒖",
+										"title": "اوامر لتحويل الاشياء",
 										"description": "",
 										"rowId": `convertmenu`
 									},
 									{
-										"title": "𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅 𝑴𝒆𝒏𝒖",
+										"title": "اوامر التحميل",
 										"description": "",
 										"rowId": `downloadmenu`
 									},
 									{
-										"title": "𝑺𝒆𝒂𝒓𝒄𝒉 𝑴𝒆𝒏𝒖",
+										"title": "اوامر البحث",
 										"description": "",
 										"rowId": `searchmenu`
 									},
 										{
-											"title": "𝑴𝒂𝒊𝒏 𝑴𝒆𝒏𝒖",
+											"title": "الاوامر الرئيسية",
 										"description": "",
 										"rowId": `mainmenu`
 										},
@@ -1796,11 +1796,11 @@ case 'allmenu': {
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: '𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑',
-                                    url: 'https://wa.me/919778383987'
+                                    url: 'https://wa.me/+212605784394'
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: '𝒊𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎',
+                                    displayText: 'انستغرام',
                                     url: 'https://instagram.com/__light__seeker__3?igshid=YmMyMTA2M2Y='
                                 }
                             }]
@@ -1819,11 +1819,11 @@ break
 
           case 'menu': case 'help': case '?': {
                 anu = `
-      𝐋𝐨𝐑𝐃-𝐌𝐃
+      بــوبيز بـــوت
  
-✘ 𝑽𝒆𝒓𝒔𝒊𝒐𝒏: 0.0.1
+✘ النسخة : 0.0.1
 
-✘ 𝑳𝒊𝒃𝒓𝒂𝒓𝒚: Baileys-MD
+✘ صاحب البوت: Noureddine ouafy
 
 ✘ 𝑴𝒐𝒅𝒆: Public
 
@@ -1833,27 +1833,27 @@ break
 
                 let btn = [{
                                 urlButton: {
-                                    displayText: '𝑮𝒊𝒕𝒉𝒖𝒃',
+                                    displayText: 'قناتي',
                                     url: 'https://github.com/Lord-official'
                                 }
                             }, {
                                 urlButton: {
-                                    displayText: '𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎',
+                                    displayText: 'انستغرامي',
                                     url: 'https://instagram.com/__light__seeker__3?igshid=YmMyMTA2M2Y='
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝑳𝒊𝒔𝒕 𝑴𝒆𝒏𝒖',
+                                    displayText: 'لائحة الاوامر',
                                     id: 'menulist'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝑨𝒍𝒍 𝒎𝒆𝒏𝒖',
+                                    displayText: 'جميع الاوامر',
                                     id: 'allmenu'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: '𝑪𝒓𝒆𝒅𝒊𝒕𝒔',
+                                    displayText: 'شكرا لـ',
                                     id: 'hehe'
                                 }
                             }]
@@ -1865,7 +1865,7 @@ break
             break
 case 'groupmenu': {
 	            anu = `
-  *𝑮𝑹𝑶𝑼𝑷 𝑴𝑬𝑵𝑼*
+  *Menu dyal groupat*
 𑁍 ${prefix}𝑙𝑖𝑛𝑘𝑔𝑟𝑜𝑢𝑝
 𑁍 ${prefix}𝑠𝑒𝑡𝑝𝑝𝑔𝑐[𝒊𝒎𝒂𝒈𝒆]
 𑁍 ${prefix}𝑠𝑒𝑡𝑛𝑎𝑚𝑒 [𝒕𝒆𝒙𝒕]
@@ -1891,7 +1891,7 @@ case 'groupmenu': {
   
 case 'downloadmenu': {
 	okemenu = `
-*𝑫𝑶𝑾𝑵𝑳𝑶𝑨𝑫𝑬𝑹*    
+*التحميل*    
 𑁍 ${prefix}𝑝𝑙𝑎𝑦 [𝒒𝒖𝒆𝒓𝒚]
 𑁍 ${prefix}𝑡𝑖𝑘𝑡𝑜𝑘𝑛𝑜𝑤𝑚 [𝒖𝒓𝒍]
 𑁍 ${prefix}𝑡𝑖𝑘𝑡𝑜𝑘𝑤𝑚 [𝒖𝒓𝒍]
